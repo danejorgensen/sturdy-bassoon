@@ -1,0 +1,8 @@
+version: 1.0
+runtime: ruby31
+build:
+  commands:
+    build:
+      - bundle install
+run:
+  command: bundle exec puma -C config/puma.rb
